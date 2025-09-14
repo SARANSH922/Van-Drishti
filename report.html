@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet"href="report.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 class="logo"></h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Map</a>
+        <a href="">Upload</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="upload">
+        
+    <!-- <div class="head">
+        <h1>Van Drishti</h1>
+    </div> -->
+
+    <div class="upload-section">
+        <h2>Upload Documents</h2>
+    <form class="upload-form" id="uploadForm">
+        <label for="fileInput" class="upload-box">
+            <div class="upload-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+            <p>Drag & drop files here, or click to select</p>
+            <small>Supports PDF, JPG, PNG, DOC, and TXT files (max 10MB each)</small>
+            <input type="file" id="fileInput" name="fileInput" multiple accept=".pdf, .jpg, .jpeg, .png, .doc, .docx, .txt" required/>
+        </label>
+
+
+
+        <div class="form-container">
+        <!-- <h3>Document information</h3><br> -->
+
+        <form>
+            <div class="form-group">
+                <label> Applicant Name:</label>
+                <input type="text" placeholder="Enter applicant's full name" required>
+            </div>
+            <div class="form-group">
+                <label>Village Name:</label>
+                <input type="text" placeholder="Enter village name" required>
+            </div>
+            <div class="form-group">
+                <label> Survey Number:</label>
+                <input type="text" placeholder="e.g., 123/4A" required>
+            </div>
+            <div class="form-group">
+                <label>Area (Hectares):</label>
+                <input type="number" step="0.01" placeholder="e.g., 2.5" required>
+            </div>
+            <div class="form-group">
+                <label>Land Type:</label>
+                <input type="text" placeholder="e.g., Forest/Cultivation" required>
+            </div>
+            <div class="form-group">
+                <label>Claim Date:</label>
+                <input type="date" required>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit" class="submit">Submit Claim</button>
+                <div class="align">
+                <button class="save"type="save">Save as Draft</button>
+                <button class="reset"type="reset">Clear Form</button>
+                </div>
+
+        </form>
+    </div>
+
+
+
+    </form>
+    </div>
+
+
+    <!-- <div class="right-option">
+        <button class="download">Download template</button>
+        <button class="view">View Sample</button>
+    </div> -->
+    </div>
+    
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
+   
