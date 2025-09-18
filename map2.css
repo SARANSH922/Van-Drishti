@@ -56,14 +56,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; 
-
+    gap: 10px; 
+    padding: 20px;
 }
 
 #indiaMap {
-    width: 60%;
-    height: 650px;
-    margin-left:300px ;
-    border: 3px solid lightgreen;
-
+    width: 50%;
+    height: 500px;
+    margin-left:400px ;
+    border: 5px solid rgb(170, 165, 165);
+    border-radius: 8px;
+      margin-top: -405px; 
 }
