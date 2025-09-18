@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive India Map</title>
+    <link rel="stylesheet" href="map2.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+</head>
+
+<body>
+
+
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-menu">
+                <ul class="nav-links">
+                    <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-chart-pie"></i> Overview & Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-file-upload"></i> Submit New Claims</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Reports</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i> System Configurations</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="controls">
+        <label for="stateSelect">Select State:</label>
+        <select id="stateSelect">
+            <option value="">--Select State--</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Tripura">Tripura</option>
+        </select>
+
+        <label for="citySelect">Select City:</label>
+        <select id="citySelect">
+            <option value="">--Select City--</option>
+        </select>
+    </div>
+
+    <div id="indiaMap"></div>
+    
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map2.js"></script>
+</body>
+
+</html>

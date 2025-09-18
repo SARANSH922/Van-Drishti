@@ -1,0 +1,69 @@
+:root {
+    --primary-green: #1D8348;
+    --light-green-bg: #E9F7EF;
+    --light-green-accent: #D5F5E3;
+    --card-accent-border: #ABEBC6;
+    --card-tint-bg: #F8FFFB;
+    --background-color: #F7F9FC;
+    --sidebar-bg: #ffffff;
+    --card-bg: #ffffff;
+    --text-primary: #2C3E50;
+    --text-secondary: #808B96;
+    --border-color: #EAECEE;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    flex-shrink: 0;
+}
+
+.sidebar-menu { 
+    flex-grow: 1; 
+}
+
+.nav-links { list-style: none; }
+.nav-links li a {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 16px; border-radius: 8px; margin-bottom: 8px;
+    text-decoration: none; font-size: 15px; font-weight: 500;
+    color: var(--text-secondary); transition: all 0.2s ease;
+}
+.nav-links li a i { font-size: 16px; width: 20px; }
+.nav-links li a:hover { background-color: #F4F6F7; color: var(--text-primary); }
+.nav-links li a.active {
+    background-color: var(--light-green-bg);
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.controls {
+    /* margin: 20px; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+
+}
+
+#indiaMap {
+    width: 60%;
+    height: 650px;
+    margin-left:300px ;
+    border: 3px solid lightgreen;
+
+}
